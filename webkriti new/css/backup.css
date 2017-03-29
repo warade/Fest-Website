@@ -1,0 +1,221 @@
+@media only screen and (min-width: 60px) and (max-width: 800px)
+{
+
+
+#loginPortal{
+	float: right;
+	margin-right: 30px;
+}
+#signupform{
+	float: right;
+	height: 700px;
+	width: 500px;
+	display: block;
+	margin-left: 320px;
+	margin-right: 129px;
+	margin-bottom: 30px;
+	padding-left: 14px;
+	padding-right: 15px;
+	padding-bottom: 30px;
+	position: absolute;
+}
+.mainContent{
+	color: #CEF2F0;
+	margin-left: 380px;
+	padding-left: 5px;
+}
+.list-group{
+	margin-right: 40px;
+	padding-bottom: 10px;
+}
+.list-group li{
+	margin-bottom: 10px;
+	background-color: black;
+}
+.profilelogo{
+	display: inline-block;
+	padding-left: 10px;
+	margin-left: 20px;
+	background: black;
+	text-align: center;
+	width: 300px;
+	margin-bottom: 20px;
+	padding-top: 15px;
+	padding-right: 10px;
+	font-family: Georgia;
+}
+#gallery_slide{
+	margin-top: 30px;
+	margin-left: 400px;
+	width: 800px;
+	height: 
+	text-align: center;
+}
+#eventlogo{
+	width: 200px; height: 80px; margin-left: 415px;
+	transition: all .6s ease-in-out;
+}
+#eventlogo:hover{
+	width: 300px;
+}
+.gallery_image{
+	transition: all .4s ease-in-out;
+}
+.gallery_image:hover{
+	opacity: 0.9;
+}
+.carousel-caption{
+	transition: all 0.5s ease-in-out;
+}
+.carousel-caption:hover{
+	transform: scale(1.1);
+}
+.paragraph {
+	font-family: Georgia;
+	border: 1px solid white;
+	padding-top: 15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	background-color: white;
+	color: #6F7273;
+	border-radius: 10px;
+	text-indent: 23px;
+	display: block;
+	line-height: 3;
+	font-size: 16px;
+}
+.paragraph::first-letter{
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+}
+#aboutcontent{
+	margin-right: 20px;
+}
+#gallery_slideinsexy{
+	margin-left: 80px;
+	padding-left: 5px;
+	width: 500px;
+}
+#button{
+	background: black;
+	color: white;
+}
+#button:hover{
+	background-color: white;
+	color: black;
+}
+#login_box{
+	border: 1px solid #999;
+	box-shadow: 0px 05px 15px 5px #968A8A;
+	border-radius: 10px;
+	display: block;
+	height: 440px;
+	width: 500px;
+	background-color: white;
+	margin-left: 140px;
+	color: #01384A;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 100px;
+}
+#event_logos{
+	height: 100px;
+	width: 300px;
+	background-color: white;
+}
+.event_box{
+	border: 1px solid #999;
+	box-shadow: 0px 05px 15px 5px #968A8A;
+	border-radius: 10px;
+	display: inline-block;
+	background-color: white;
+	margin-left: 120px;
+	color: #01384A;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 100px;
+	text-align: center;
+	transition: all .5s ease-in-out;
+	padding-top: 20px;
+	border: 1px solid blue;
+}
+.event_box:hover{
+	transform: scale(1.1);
+	background-color: #C9ADC9;
+}
+.listofeventbox{
+	display: inline;
+}
+.mainFooter{
+	padding-left: 850px;
+	margin-top: 90px;
+	text-align: center;
+	padding-top: 10px;
+	padding-top: 100px;
+	position: absolute;
+}
+
+.mainFooter:hover{
+	color: gray;
+}
+
+.footer.two {
+    width: 23%;
+    margin: 0 8%;
+    float: right;
+    margin-top: 130px;
+    position: absolute;
+}
+.footer.two ul{
+	margin:0;
+	padding:0;
+}
+.footer.two ul li{
+	list-style-type:none;
+	display:block;
+    line-height: 1.5em;
+	font-size:14px;
+}
+.footer.two ul li a{
+color:#908F8F;	
+display:block;
+}
+.footer.two ul li a.fb {
+	background: url('../images/social2.png') no-repeat 0px 4px;  
+    padding: 10px 0 12px 52px;
+}
+.footer.two ul li a.fb1 {
+	background: url('../images/social1.png') no-repeat 0px 4px;
+    padding: 10px 0 12px 52px;
+}
+.footer.two ul li a.fb2 {
+    background: url('../images/social3.png') no-repeat 0px 4px;
+    padding: 10px 0 12px 52px;
+}
+.footer.two ul li a.fb3 {
+    background: url('../images/social4.png') no-repeat 0px 4px;
+    padding: 10px 0 12px 52px;
+}
+body {
+  
+}
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+ background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
+  background-size: cover;
+  transition: 1s opacity;
+}
+.stopfade { 
+   opacity: .5;
+}
+}

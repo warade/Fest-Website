@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Simple Sidebar - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--google font-->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+
+    <!--footer stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/footer-distributed-with-address-and-phones.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body style="font-family: Lobster;">
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav" id="slidingmenu">
+                <li class="sidebar-brand" style="margin-bottom: 60px;">
+                    <a href="#" style="font-size: 40px;">
+                        Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a href="events.php">Events</a>
+                </li>
+                <li>
+                    <a href="contacts.html">About Us</a>
+                </li>
+                <li>
+                    <a href="about.html">About IIITM</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#menu-toggle" id="menu-toggle" style="color: white;"><img src="images/menulogo.jpg" id="menuLogo"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+        
+<div id="signupform">
+<form action="store1.php" method="POST"  enctype="multipart/form-data" onsubmit="final()">
+                <header style="text-align: center;">
+                    <h3>Regester......</h3><hr>
+                </header>
+                Name:<br>
+                    <input type="text" name="name" id="element-3" class="form-control input-lg" placeholder="Enter Name"><br>
+                City:<br>
+                    <input type="text" name="city" id="element-3" class="form-control input-lg" placeholder="Enter City">
+                        <br>
+                     <input type="radio" name="sex" value="male">Male
+                    <input type="radio" name="sex" value="female">Female<br><br>
+    <!--changed somewhere id is element 3 from id is fname -->
+             Age: <input type="text" name="age" id="element-3" class="form-control input-lg" placeholder="Enter Age"><br>
+
+            Email:  <input type="text" name="email" id="element-3" placeholder="email@example.com" onkeyup="mail()" class="form-control input-lg"><label id="eprompt"></label><script type="text/javascript" src="valid.js"></script><br>
+
+                        Username:
+                          <input type="text" name="username" id="username" class="form-control input-lg" placeholder=" username" onkeyup="usernam()"><label id="uprompt"></label><br>
+                        Password: 
+                 <input type="password" name="password" class="form-control input-lg" placeholder=" password" onkeyup="pass()"><br>
+    
+                <input type="Submit" value="Next" class="btn btn-success" style="float: right;">
+
+</form>
+</div>
+         
+
+
+
+
+
+
+<video autoplay  poster="" id="bgvid" loop> 
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+
+  
+<source src="assets/video/bgvid.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+    <!--video background-->
+   
+    
+
+
+</body>
+
+</html>

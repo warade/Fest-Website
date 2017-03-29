@@ -1,0 +1,235 @@
+<html><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><base href="/"><meta charset="utf-8"><meta name="format-detection" content="telephone=no"><meta name="msapplication-tap-highlight" content="no"><meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, minimal-ui"><link href="css/index.min.css" rel="stylesheet"><link href="fonts/icons.css" rel="stylesheet"><title>AIESEC Opportunities Portal</title><meta name="author"><meta name="description"><link rel="canonical"><link rel="favicons"><style>.ngf-hide{display:none !important}</style></head><body class=" ng-app"><!-- uiView: undefined --><ui-view class="bi-animate ng-scope" id="root" name="root"><!--<video class="main-programmes" autoplay ng-if="!vm.hasTouch">
+
+    <source src="assets/aiesec.mp4" type="video/mp4">
+    <source src="assets/aiesec.webm" type="video/webm">
+
+</video>-->
+
+
+<main class="container programmes cf ng-scope">
+
+    <div class="imgBG" style='background-image: url("../images/aisec-img4.png");' ng-style="vm.chooseImg === 0 &amp;&amp; {'background-image': 'url(../images/aisec-img2.png)'} ||&#10;              vm.chooseImg === 1 &amp;&amp; {'background-image': 'url(../images/aisec-img3.png)'} ||&#10;              vm.chooseImg === 2 &amp;&amp; {'background-image': 'url(../images/aisec-img4.png)'} ||&#10;              vm.chooseImg === 3 &amp;&amp; {'background-image': 'url(../images/aisec-img5.png)'}"></div>    
+	<!-- ngIf: vm.hasTouch -->
+	<div class="ai-op-profile-card ng-isolate-scope" style="margin-top: -173px;" ai-op-vertical-align="" profile="user">
+	
+	<div class="avatar">
+		
+		<!-- ngIf: vm.currentPerson -->
+		
+		<!-- ngIf: !vm.currentPerson --><div class="container op ng-scope" ng-if="!vm.currentPerson">
+		
+			<a href="/auth" target="_self" ng-href="/auth">Log In</a>
+		
+		</div><!-- end ngIf: !vm.currentPerson -->
+		
+	</div>
+	
+	<div class="options cf">
+		
+		<!-- ngIf: vm.currentPerson -->
+		
+		<!-- ngIf: !vm.currentPerson --><ul class="ng-scope" ng-if="!vm.currentPerson">
+			
+			<li><a class="login" href="/auth" target="_self" ng-href="/auth"><span>Log In / Sign Up</span></a></li>
+		</ul><!-- end ngIf: !vm.currentPerson -->
+		
+	</div>
+	
+	<div class="promo">
+		
+		<div class="hgroup">
+			
+			<h3>373,858 Opportunities</h3>
+			<p>Begin your journey. Follow your path.</p>
+			
+		</div>
+		
+	</div>
+	
+</div>
+
+	<section class="inner-container">
+
+		<!-- ngIf: !vm.hasTouch --><article class="ng-scope" ng-if="!vm.hasTouch" ng-class="vm.programmes ? '' : 'collapse'">
+
+			<div class="ai-op-profile-card ng-isolate-scope" style="margin-top: 0px;" ai-op-vertical-align="" profile="user">
+	
+	<div class="avatar">
+		
+		<!-- ngIf: vm.currentPerson -->
+		
+		<!-- ngIf: !vm.currentPerson --><div class="container op ng-scope" ng-if="!vm.currentPerson">
+		
+			<a href="/auth" target="_self" ng-href="/auth">Log In</a>
+		
+		</div><!-- end ngIf: !vm.currentPerson -->
+		
+	</div>
+	
+	<div class="options cf">
+		
+		<!-- ngIf: vm.currentPerson -->
+		
+		<!-- ngIf: !vm.currentPerson --><ul class="ng-scope" ng-if="!vm.currentPerson">
+			
+			<li><a class="login" href="/auth" target="_self" ng-href="/auth"><span>Log In / Sign Up</span></a></li>
+		</ul><!-- end ngIf: !vm.currentPerson -->
+		
+	</div>
+	
+	<div class="promo">
+		
+		<div class="hgroup">
+			
+			<h3>373,858 Opportunities</h3>
+			<p>Begin your journey. Follow your path.</p>
+			
+		</div>
+		
+	</div>
+	
+</div>
+			<!-- <a class="" ui-sref="companies">Company?</a> -->
+
+		</article><!-- end ngIf: !vm.hasTouch -->
+
+		<nav ng-class="{'collapse': !vm.programmes, 'on-experience': vm.currentPerson.current_experience}">
+
+			<ul class="programmes" ng-syle="{'height': (vm.programmes.length * 240) + 'px'}">
+
+				<!-- ngRepeat: programme in vm.programmes --><!-- ngIf: !vm.hasTouch --><li class="ng-scope" ng-if="!vm.hasTouch" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+				<!--ng-style="{'height': (100 / programmes.length)+'%'}"-->
+
+					<div class="hover" ng-style="{'background-color': programme.color}"></div>
+
+					<div class="programme">
+
+						<a href="/programmes/GCDP" ui-sref="programmes.programme({programme: programme.short_name})" ng-click="vm.assignSelectedProgramme(programme);"><!--ng-style="{'color': programme.color}"-->
+
+							<h2 class="ng-binding">Volunteer Abroad</h2>
+							<h5 class="ng-binding">Our voluteer experiences empower you to develop yourself while making a positive impact.</h5>
+
+							<div class="avatar" style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1446817985.png");' ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>
+								 <!--'background-color': programme.color, -->
+
+						</a>
+
+						<div class="indicator icon-next"></div>
+
+					</div>
+
+				</li><!-- end ngIf: !vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes --><!-- ngIf: !vm.hasTouch --><li class="ng-scope" ng-if="!vm.hasTouch" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+				<!--ng-style="{'height': (100 / programmes.length)+'%'}"-->
+
+					<div class="hover" ng-style="{'background-color': programme.color}"></div>
+
+					<div class="programme">
+
+						<a href="/programmes/GIP" ui-sref="programmes.programme({programme: programme.short_name})" ng-click="vm.assignSelectedProgramme(programme);"><!--ng-style="{'color': programme.color}"-->
+
+							<h2 class="ng-binding">Intern Abroad</h2>
+							<h5 class="ng-binding">Jumpstart your career by embarking on a professional internship abroad.</h5>
+
+							<div class="avatar" style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1446817937.png");' ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>
+								 <!--'background-color': programme.color, -->
+
+						</a>
+
+						<div class="indicator icon-next"></div>
+
+					</div>
+
+				</li><!-- end ngIf: !vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes --><!-- ngIf: !vm.hasTouch --><li class="ng-scope" ng-if="!vm.hasTouch" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+				<!--ng-style="{'height': (100 / programmes.length)+'%'}"-->
+
+					<div class="hover" ng-style="{'background-color': programme.color}"></div>
+
+					<div class="programme">
+
+						<a href="/programmes/TMP%2BTLP" ui-sref="programmes.programme({programme: programme.short_name})" ng-click="vm.assignSelectedProgramme(programme);"><!--ng-style="{'color': programme.color}"-->
+
+							<h2 class="ng-binding">Join in Campus</h2>
+							<h5 class="ng-binding">AIESEC is run by youth for youth, and we're looking for students who want to contribute to our vision.</h5>
+
+							<div class="avatar" style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1447078319.png");' ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>
+								 <!--'background-color': programme.color, -->
+
+						</a>
+
+						<div class="indicator icon-next"></div>
+
+					</div>
+
+				</li><!-- end ngIf: !vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes -->
+
+				<!-- ngRepeat: programme in vm.programmes --><!-- ngIf: vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes --><!-- ngIf: vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes --><!-- ngIf: vm.hasTouch --><!-- end ngRepeat: programme in vm.programmes -->
+
+				<!-- ngIf: vm.hasTouch -->
+
+			</ul>
+
+			<ul class="on-experience cf" style="margin-top: 0px;" ai-op-vertical-align="">
+
+				<div class="hgroup">
+					<h3 class="ng-binding"><span>CURRENTLY</span> </h3>
+					<h5>Here's the latest from your logbook</h5>
+				</div>
+
+				<ul class="timeline">
+
+					<!-- TO DO: WRAP IN DIRETIVE -->
+					<!-- ngRepeat: card in vm.timeline -->
+					<!-- <ai-op-timeline-card card="card"></ai-op-timeline-card> -->
+
+				</ul>
+
+				<div class="hgroup">
+					<h3>Programmes</h3>
+					<h5><!-- ngRepeat: programme in vm.programmes --><span class="ng-binding ng-scope" ng-repeat="programme in vm.programmes">Volunteer Abroad</span><!-- end ngRepeat: programme in vm.programmes --><span class="ng-binding ng-scope" ng-repeat="programme in vm.programmes">Intern Abroad</span><!-- end ngRepeat: programme in vm.programmes --><span class="ng-binding ng-scope" ng-repeat="programme in vm.programmes">Join in Campus</span><!-- end ngRepeat: programme in vm.programmes --></h5>
+				</div>
+
+				<ul class="programmes">
+
+					<!-- ngRepeat: programme in vm.programmes --><li class="ng-scope" style="width: 33.33%;" ng-style="{'width': (100 / vm.programmes.length) + '%'}" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+
+						<a style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1446817985.png");' href="/programmes/GCDP" ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}" ui-sref="programmes.programme({programme: programme.short_name})">
+
+							<!--<h2>{{programme.consumer_name}}</h2>
+							<div class="avatar"
+							ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>-->
+						</a>
+
+					</li><!-- end ngRepeat: programme in vm.programmes --><li class="ng-scope" style="width: 33.33%;" ng-style="{'width': (100 / vm.programmes.length) + '%'}" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+
+						<a style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1446817937.png");' href="/programmes/GIP" ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}" ui-sref="programmes.programme({programme: programme.short_name})">
+
+							<!--<h2>{{programme.consumer_name}}</h2>
+							<div class="avatar"
+							ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>-->
+						</a>
+
+					</li><!-- end ngRepeat: programme in vm.programmes --><li class="ng-scope" style="width: 33.33%;" ng-style="{'width': (100 / vm.programmes.length) + '%'}" ng-mouseleave="$parent.background = 'none'" ng-mouseover="$parent.background = 'url(' + programme.cover_photo_urls + ')'" ng-repeat="programme in vm.programmes">
+
+						<a style='background-image: url("https://gis-production.s3.amazonaws.com/profile_photos/original/1447078319.png");' href="/programmes/TMP%2BTLP" ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}" ui-sref="programmes.programme({programme: programme.short_name})">
+
+							<!--<h2>{{programme.consumer_name}}</h2>
+							<div class="avatar"
+							ng-style="{'background-image':'url('+ programme.profile_photo_urls.original +')'}"></div>-->
+						</a>
+
+					</li><!-- end ngRepeat: programme in vm.programmes -->
+
+				</ul>
+
+			</ul>
+
+		</nav>
+
+
+	</section>
+
+
+
+
+
+</main></ui-view><div class="resolve"><div class="sk-cube sk-cube1"></div><div class="sk-cube sk-cube2"></div><div class="sk-cube sk-cube3"></div><div class="sk-cube sk-cube4"></div><div class="sk-cube sk-cube5"></div><div class="sk-cube sk-cube6"></div><div class="sk-cube sk-cube7"></div><div class="sk-cube sk-cube8"></div><div class="sk-cube sk-cube9"></div></div><!-- ngIf: !vm.hasTouch --><div class="ai-op-feedback ng-scope" ng-if="!vm.hasTouch"><a href="http://goo.gl/forms/ZI2neZEOT4" target="_blank"><span>Give Feedback</span></a></div><!-- end ngIf: !vm.hasTouch --><script src="js/1.0.0.op.js"></script></body></html>

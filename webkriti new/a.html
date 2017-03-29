@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form action="store1.php" method="POST"  enctype="multipart/form-data" onsubmit="final()">
+	<p>profile pic:<input type="file" name="  pic" id="pic"></p>
+	<p><input type="text" name="name" placeholder="  name"></p>
+	
+	<p><input type="text" name="city" placeholder="  city"></p>
+
+	<p><input type="radio" name="sex"  value="male">male
+	<input type="radio" name="sex" value="female">female</p>
+	
+	<p>Date of birth:<input type="text" name="dob"></p>
+
+Email: <input type="text" name="email" id="fname" placeholder=" email@example.com" onkeyup="mail()"><label id="eprompt"></label>
+<script type="text/javascript" src="valid.js"></script>
+
+
+<p><input type="text" name="username" id="username" placeholder=" username" onkeyup="usernam()"><label id="uprompt"></label></p>
+	
+	<p><input type="password" name="password" placeholder=" password" onkeyup="pass()"></p>
+	
+	<p><input type="Submit" value="Next" ></p>
+
+</form>
+
+</body>
+</html>
